@@ -1,0 +1,10 @@
+@media(min-width: 375px) {
+    /*MAIN*/
+    .main {
+        .blog-post{
+            &__title {
+                font-size: 3rem;
+            }
+        }
+    }
+}

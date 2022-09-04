@@ -1,0 +1,17 @@
+@media(min-width:992px) {
+
+    /*NAVIGATION DESKTOP*/
+    .nav-desktop {
+        &__title {
+            font-size: 11rem;
+        }
+    }
+}
+
+@media(min-width:1200px) {
+
+    /*MAIN*/
+    .main {
+        padding: 0;
+    }
+}
