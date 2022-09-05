@@ -1,5 +1,24 @@
+/*COLORS*/ 
+@import './colors';
+
 .wrapper {
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
+}
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $black-color;
+    padding: 1em;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    transition: transform .2s;
+
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
