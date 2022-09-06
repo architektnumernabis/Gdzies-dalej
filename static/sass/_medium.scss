@@ -2,6 +2,8 @@
 
     /*MAIN*/
     .main {
+
+        /*BLOG-POST*/
         .blog-post {
             &__title {
                 font-size: 4rem;
@@ -20,6 +22,7 @@
             }
         }
 
+        /*ALL-POSTS*/
         .all-posts {
 
             a {
@@ -46,7 +49,7 @@
 
         &__title {
             text-align: center;
-            font-family: 'Aboreto', cursive;
+            font-family: 'Qwitcher Grypen', cursive;
             font-size: 9rem;
             padding: 20px 0;
         }
@@ -97,8 +100,10 @@
 
     /*MAIN*/
     .main {
+        margin: 3em auto;
         grid-template-columns: repeat(3, 1fr);
 
+        /*BLOG-POSTS*/
         .blog-posts {
             grid-column: 1/3;
 
@@ -109,6 +114,7 @@
             }
         }
 
+        /*ALL-POSTS*/
         .all-posts {
 
             a {
@@ -117,8 +123,39 @@
             }
         }
 
+        /*SDIEBAR*/
         .sidebar {
             grid-column: 3/4;
+
+            /*COUNTRY*/
+            .country {
+                &__box {
+                    a {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
         }
     }
+}
+
+@media (min-width: 992px) {
+
+    /*MAIN*/
+    .main {
+
+        /*SDIEBAR*/
+        .sidebar {
+
+            /*COUNTRY*/
+            .country {
+                &__box {
+                    a {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+
 }

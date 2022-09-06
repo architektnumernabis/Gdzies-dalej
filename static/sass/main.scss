@@ -15,6 +15,8 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-image: url('../img/Shiny\ Overlay.svg');
+    background-size: cover;
 }
 
 /*NAVIGATION DESKTOP*/
@@ -52,7 +54,6 @@ body {
         justify-content: space-evenly;
         padding: 2em;
         margin-bottom: 2em;
-        border: 2px solid $black-color;
 
         &__img {
             position: relative;
@@ -77,6 +78,7 @@ body {
         }
 
         &__title {
+            font-family: 'Aboreto', cursive;
             font-size: 2.3rem;
             margin-top: 0.3em;
         }
@@ -94,6 +96,7 @@ body {
         }
     }
 
+    /*ALL-POSTS*/
     .all-posts {
         display: flex;
         justify-content: center;
@@ -106,15 +109,19 @@ body {
 
     /*SIDEBAR*/
     .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
 
+        /*ABOUT-US*/
         .about-us {
             display: flex;
             flex-direction: column;
             gap: 1em;
             padding: 2em;
-            border: 2px solid $black-color;
 
             &__title {
+                font-family: 'Aboreto', cursive;
                 text-align: center;
                 text-transform: uppercase;
                 font-size: 2.3rem;
@@ -133,6 +140,48 @@ body {
 
             &__text {
                 font-size: 1.2rem;
+            }
+        }
+
+        /*COUNTRY*/
+        .country {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            padding: 2em;
+
+            &__title {
+                font-family: 'Aboreto', cursive;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 2.3rem;
+            }
+
+            &__box {
+                display: flex;
+                justify-content: space-evenly;
+               
+                a {
+                    padding: 5px;
+                    text-decoration: none;
+                    font-size: 2.7rem;
+                }
+                
+            }
+        }
+
+        /*CONTACT*/
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            padding: 2em;
+
+            &__title {
+                font-family: 'Aboreto', cursive;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 2.3rem;
             }
         }
     }

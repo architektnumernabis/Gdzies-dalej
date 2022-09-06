@@ -1,10 +1,14 @@
-/*COLORS*/ 
+/*COLORS*/
 @import './colors';
 
 .wrapper {
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
+}
+
+.border {
+    border: 2px solid $black-color;
 }
 
 .button {

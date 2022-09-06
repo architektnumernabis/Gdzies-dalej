@@ -16,6 +16,10 @@
   max-width: 1200px;
 }
 
+.border {
+  border: 2px solid black;
+}
+
 .button {
   text-decoration: none;
   text-transform: uppercase;
@@ -44,6 +48,8 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-image: url("../img/Shiny Overlay.svg");
+  background-size: cover;
 }
 
 /*NAVIGATION DESKTOP*/
@@ -68,6 +74,7 @@ body {
   display: grid;
   gap: 2em;
   /*BLOG POST*/
+  /*ALL-POSTS*/
   /*SIDEBAR*/
 }
 
@@ -91,7 +98,6 @@ body {
           justify-content: space-evenly;
   padding: 2em;
   margin-bottom: 2em;
-  border: 2px solid black;
 }
 
 .main .blog-post__img {
@@ -124,12 +130,13 @@ body {
 }
 
 .main .blog-post__title {
+  font-family: 'Aboreto', cursive;
   font-size: 2.3rem;
   margin-top: 0.3em;
 }
 
 .main .blog-post__date {
-  color: grey;
+  color: rgba(128, 128, 128, 0.5);
 }
 
 .main .blog-post__text {
@@ -154,6 +161,20 @@ body {
   font-size: 1.2rem;
 }
 
+.main .sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  /*ABOUT-US*/
+  /*COUNTRY*/
+  /*CONTACT*/
+}
+
 .main .sidebar .about-us {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,10 +185,10 @@ body {
           flex-direction: column;
   gap: 1em;
   padding: 2em;
-  border: 2px solid black;
 }
 
 .main .sidebar .about-us__title {
+  font-family: 'Aboreto', cursive;
   text-align: center;
   text-transform: uppercase;
   font-size: 2.3rem;
@@ -195,6 +216,59 @@ body {
   font-size: 1.2rem;
 }
 
+.main .sidebar .country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+}
+
+.main .sidebar .country__title {
+  font-family: 'Aboreto', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+}
+
+.main .sidebar .country__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .sidebar .country__box a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 2.7rem;
+}
+
+.main .sidebar .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+}
+
+.main .sidebar .contact__title {
+  font-family: 'Aboreto', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+}
+
 /*FOOTER*/
 .footer {
   background-color: black;
@@ -205,16 +279,32 @@ body {
 /*BREAKPOINTS*/
 @media (min-width: 375px) {
   /*MAIN*/
+  .main {
+    /*BLOG-POST*/
+    /*SIDEBAR*/
+  }
   .main .blog-post__title {
     font-size: 3rem;
   }
+  .main .sidebar {
+    margin-top: -1.4em;
+    /*ABOUT-US*/
+    /*COUNTRY*/
+  }
   .main .sidebar .about-us__title {
     font-size: 2.6rem;
+  }
+  .main .sidebar .country__box a {
+    font-size: 4rem;
   }
 }
 
 @media (min-width: 576px) {
   /*MAIN*/
+  .main {
+    /*BLOG-POST*/
+    /*ALL-POSTS*/
+  }
   .main .blog-post__title {
     font-size: 4rem;
   }
@@ -249,7 +339,7 @@ body {
   }
   .nav-desktop__title {
     text-align: center;
-    font-family: 'Aboreto', cursive;
+    font-family: 'Qwitcher Grypen', cursive;
     font-size: 9rem;
     padding: 20px 0;
   }
@@ -295,8 +385,12 @@ body {
   }
   /*MAIN*/
   .main {
+    margin: 3em auto;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    /*BLOG-POSTS*/
+    /*ALL-POSTS*/
+    /*SDIEBAR*/
   }
   .main .blog-posts {
     -ms-grid-column: 1;
@@ -314,6 +408,23 @@ body {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
+    /*COUNTRY*/
+  }
+  .main .sidebar .country__box a {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /*MAIN*/
+  .main {
+    /*SDIEBAR*/
+  }
+  .main .sidebar {
+    /*COUNTRY*/
+  }
+  .main .sidebar .country__box a {
+    font-size: 3.5rem;
   }
 }
 
@@ -328,6 +439,13 @@ body {
   /*MAIN*/
   .main {
     padding: 0;
+    /*SDIEBAR*/
+  }
+  .main .sidebar {
+    /*COUNTRY*/
+  }
+  .main .sidebar .country__box a {
+    font-size: 4.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

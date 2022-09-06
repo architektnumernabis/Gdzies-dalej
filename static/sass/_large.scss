@@ -13,5 +13,18 @@
     /*MAIN*/
     .main {
         padding: 0;
+
+        /*SDIEBAR*/
+        .sidebar {
+
+            /*COUNTRY*/
+            .country {
+                &__box {
+                    a {
+                        font-size: 4.5rem;
+                    }
+                }
+            }
+        }
     }
 }
