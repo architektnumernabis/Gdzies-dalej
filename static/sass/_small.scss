@@ -1,5 +1,14 @@
 @media(min-width: 375px) {
 
+    /*NAVIGATION MOBILE*/
+    .nav-mobile {
+        padding: 10px;
+
+        &__title {
+            font-size: 2.2em;
+        }
+    }
+
     /*MAIN*/
     .main {
 

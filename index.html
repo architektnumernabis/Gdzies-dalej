@@ -14,11 +14,34 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@400;700&family=Qwitcher+Grypen:wght@700&display=swap"
         rel="stylesheet">
+    <!--BURGER ICON-->
+    <link rel="stylesheet" href="./static/css/hamburger.css">
     <!--MY STYLES-->
     <link rel="stylesheet" href="./static/css/main.css">
 </head>
 
 <body>
+
+    <!--NAVIGATION MOBILE-->
+    <div class="nav-mobile">
+        <div class="nav-mobile__title">
+            <h1>Gdzieś dalej</h1>
+        </div>
+        <div class="nav-mobile__button">
+            <button class="hamburger hamburger--arrow" type="button">
+                <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <div class="nav-mobile__links">
+            <a href="" class="nav-mobile__link">strona główna</a>
+            <a href="" class="nav-mobile__link">wszystie posty</a>
+            <a href="" class="nav-mobile__link">o nas</a>
+            <a href="" class="nav-mobile__link">kontakt</a>
+        </div>
+    </div>
+
     <!--NAVIGATION DESKTOP-->
     <div class="wrapper">
         <div class="nav-desktop">
@@ -31,9 +54,6 @@
             </div>
         </div>
     </div>
-
-    <!--NAVIGATION MOBILE-->
-    <div class="nav-mobile"></div>
 
     <!--HEADER-->
     <header class="header wrapper"></header>
@@ -118,8 +138,16 @@
     </main>
 
     <!--FOOTER-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer__box--one"></div>
+        <div class="footer__box--two">
+            <p class="footer__text"> &copy; <span class="footer__year"></span> by Maciej Pawlica</p>
+        </div>
+    </footer>
 
+
+    <!--MY SCRIPTS-->
+    <script src="./static/js/main.js"></script>
 </body>
 
 </html>

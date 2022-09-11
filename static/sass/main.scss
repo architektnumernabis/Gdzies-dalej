@@ -7,6 +7,9 @@
 /*COLORS*/
 @import './colors';
 
+/*MIXINS*/
+@import './mixins';
+
 /*COMMON CLASSES*/
 html {
     font-size: 62.5%;
@@ -25,6 +28,62 @@ body {
 }
 
 /*NAVIGATION MOBILE*/
+.nav-mobile {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    background-color: $white-color;
+    z-index: 100;
+
+    &__title {
+        font-family: 'Qwitcher Grypen', cursive;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 2rem;
+        padding: 2px;
+        z-index: 1000;
+    }
+
+    &__button {
+        z-index: 1000;
+    }
+
+    &__links {
+        //display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $white-color;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-102%);
+        transition: transform .3s;
+
+        &--active {
+            transform: translateX(0);
+        }
+    }
+
+    &__link {
+        @include navHoverAnimation;
+        display: inline-block;
+        margin: 0.5em;
+        padding: 0.5em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $black-color;
+        font-size: 2.4rem;
+    }
+
+}
 
 /*HEADER*/
 .header {
@@ -160,13 +219,13 @@ body {
             &__box {
                 display: flex;
                 justify-content: space-evenly;
-               
+
                 a {
                     padding: 5px;
                     text-decoration: none;
-                    font-size: 2.7rem;
+                    font-size: 2.6rem;
                 }
-                
+
             }
         }
 
@@ -190,8 +249,24 @@ body {
 /*FOOTER*/
 .footer {
     background-color: $black-color;
-    height: 100px;
+    //height: 100px;
     margin-top: 2em;
+
+    &__box {
+        &--one {
+            height: 100px;
+        }
+
+        &--two {
+            background-color: $less-darker;
+            //popracować nad kolorystyką
+        }
+    }
+
+    &__text {
+        padding: 5px;
+        text-align: center;
+    }
 }
 
 /*BREAKPOINTS*/

@@ -1,0 +1,27 @@
+@mixin navHoverAnimation {
+    position: relative;
+
+    &:hover {
+        color: $white-color;
+    }
+
+    &::after,
+    &::before {
+        transition: height .3s, color .5s;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: 100%;
+        background-color: $black-color;
+        z-index: -100;
+    }
+
+    &:hover::after {
+        height: 100%;
+    }
+}

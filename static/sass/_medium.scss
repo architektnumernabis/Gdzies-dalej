@@ -1,5 +1,14 @@
 @media(min-width: 576px) {
 
+    /*NAVIGATION MOBILE*/
+    .nav-mobile {
+        padding: 15px;
+
+        &__title {
+            font-size: 2.2em;
+        }
+    }
+
     /*MAIN*/
     .main {
 
@@ -34,6 +43,11 @@
 
 @media(min-width: 768px) {
 
+    /*NAVIGATION MOBILE*/
+    .nav-mobile {
+        display: none;
+    }
+
     /*NAVIGATION DESKTOP*/
     .nav-desktop {
         display: grid;
@@ -63,32 +77,8 @@
             padding: 0.5em 0;
 
             a {
-                position: relative;
+                @include navHoverAnimation;
                 padding: 5px;
-
-                &:hover {
-                    color: $white-color;
-                }
-
-                &::after,
-                &::before {
-                    transition: height .3s, color .5s;
-                }
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    height: 0;
-                    width: 100%;
-                    background-color: $black-color;
-                    z-index: -100;
-                }
-
-                &:hover::after {
-                    height: 100%;
-                }
             }
         }
     }
