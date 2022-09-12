@@ -249,23 +249,54 @@ body {
 /*FOOTER*/
 .footer {
     background-color: $black-color;
-    //height: 100px;
     margin-top: 2em;
 
     &__box {
         &--one {
-            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
         }
 
         &--two {
-            background-color: $less-darker;
+            background-color: $black-color;
             //popracować nad kolorystyką
+        }
+
+        &--left,
+        &--right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em 0;
+        }
+
+        &--left {
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $white-color;
+                font-size: 1.2rem;
+                padding: 5px 0;
+            }
+        }
+
+        &--right {
+            flex-direction: row;
+            justify-content: center;
+
+            i {
+                color: $white-color;
+                font-size: 2.5rem;
+                padding: 5px;
+            }
         }
     }
 
     &__text {
         padding: 5px;
         text-align: center;
+        color: $white-color;
     }
 }
 

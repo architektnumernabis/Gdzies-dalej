@@ -381,16 +381,63 @@ body {
 }
 
 .footer__box--one {
-  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .footer__box--two {
-  background-color: #3b3737;
+  background-color: black;
+}
+
+.footer__box--left, .footer__box--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 0;
+}
+
+.footer__box--left a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.2rem;
+  padding: 5px 0;
+}
+
+.footer__box--right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__box--right i {
+  color: white;
+  font-size: 2.5rem;
+  padding: 5px;
 }
 
 .footer__text {
   padding: 5px;
   text-align: center;
+  color: white;
 }
 
 /*BREAKPOINTS*/
@@ -450,6 +497,40 @@ body {
   }
   .main .all-posts a {
     font-size: 1.4rem;
+  }
+  /*FOOTER*/
+  .footer__box--one {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__box--left a {
+    font-size: 1.5rem;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  .footer__box--left a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .footer__box--right i {
+    font-size: 3.5rem;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    cursor: pointer;
+  }
+  .footer__box--right i:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  .footer__text {
+    font-size: 1.2rem;
+    padding: 10px;
   }
 }
 
@@ -567,6 +648,16 @@ body {
   /*NAVIGATION DESKTOP*/
   .nav-desktop__title {
     font-size: 11rem;
+  }
+  /*FOOTER*/
+  .footer__box--left a {
+    font-size: 1.7rem;
+  }
+  .footer__box--right i {
+    font-size: 5rem;
+  }
+  .footer__text {
+    font-size: 1.5rem;
   }
 }
 

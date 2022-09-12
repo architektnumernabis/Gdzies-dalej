@@ -6,6 +6,28 @@
             font-size: 11rem;
         }
     }
+
+    /*FOOTER*/
+    .footer {
+        &__box {
+
+            &--left {
+                a {
+                    font-size: 1.7rem;
+                }
+            }
+
+            &--right {
+                i {
+                    font-size: 5rem;
+                }
+            }
+        }
+
+        &__text {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 @media(min-width:1200px) {
