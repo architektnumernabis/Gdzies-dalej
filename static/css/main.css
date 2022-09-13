@@ -170,6 +170,7 @@ body {
   height: 50vh;
   background-position: center;
   background-size: cover;
+  mask-type: 77px;
 }
 
 /*MAIN*/
