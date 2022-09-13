@@ -61,6 +61,7 @@ body {
 /*NAVIGATION MOBILE*/
 .nav-mobile {
   position: fixed;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
