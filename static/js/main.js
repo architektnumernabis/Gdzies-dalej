@@ -21,7 +21,7 @@ handleCurrentYear();
 
 const addMarginToHeader = () => {
     const navHeight = navigationMobile.clientHeight;
-    header.style.marginTop = navHeight + 'px';
+    header.style.marginTop = `${navHeight}px`;
 }
 
 addMarginToHeader();
