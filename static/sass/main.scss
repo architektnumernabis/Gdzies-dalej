@@ -22,6 +22,10 @@ body {
     background-size: cover;
 }
 
+.body-no-scroll {
+    overflow-y: hidden;
+}
+
 /*NAVIGATION DESKTOP*/
 .nav-desktop {
     display: none;
@@ -243,6 +247,33 @@ body {
                 text-align: center;
                 text-transform: uppercase;
                 font-size: 2.3rem;
+            }
+
+            &__box {
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start; 
+
+               &--container {
+                display: flex;
+
+                a {
+                    color: $black-color;
+                    font-size: 4rem;
+                    transition: transform .3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    line-height: 4rem;
+                    margin-left: 20px;
+                }
+
+               }
             }
         }
     }

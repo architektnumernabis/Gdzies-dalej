@@ -53,6 +53,10 @@ body {
   background-size: cover;
 }
 
+.body-no-scroll {
+  overflow-y: hidden;
+}
+
 /*NAVIGATION DESKTOP*/
 .nav-desktop {
   display: none;
@@ -376,6 +380,45 @@ body {
   font-size: 2.3rem;
 }
 
+.main .sidebar .contact__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main .sidebar .contact__box--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .sidebar .contact__box--container a {
+  color: black;
+  font-size: 4rem;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.main .sidebar .contact__box--container a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .sidebar .contact__box--container p {
+  font-size: 1.2rem;
+  line-height: 4rem;
+  margin-left: 20px;
+}
+
 /*FOOTER*/
 .footer {
   background-color: black;
@@ -463,12 +506,16 @@ body {
     margin-top: -1.4em;
     /*ABOUT-US*/
     /*COUNTRY*/
+    /*CONTACT*/
   }
   .main .sidebar .about-us__title {
     font-size: 2.6rem;
   }
   .main .sidebar .country__box a {
     font-size: 4rem;
+  }
+  .main .sidebar .contact__box--container p {
+    font-size: 1.5rem;
   }
 }
 
@@ -484,6 +531,7 @@ body {
   .main {
     /*BLOG-POST*/
     /*ALL-POSTS*/
+    /*SIDEBAR*/
   }
   .main .blog-post__title {
     font-size: 4rem;
@@ -499,6 +547,16 @@ body {
   }
   .main .all-posts a {
     font-size: 1.4rem;
+  }
+  .main .sidebar {
+    /*CONTACT*/
+  }
+  .main .sidebar .contact__box--container a {
+    font-size: 5rem;
+  }
+  .main .sidebar .contact__box--container p {
+    font-size: 1.6rem;
+    line-height: 5rem;
   }
   /*FOOTER*/
   .footer__box--one {
@@ -627,9 +685,17 @@ body {
     -ms-grid-column-span: 1;
     grid-column: 3/4;
     /*COUNTRY*/
+    /*CONTACT*/
   }
   .main .sidebar .country__box a {
     font-size: 2.5rem;
+  }
+  .main .sidebar .contact__box--container a {
+    font-size: 4rem;
+  }
+  .main .sidebar .contact__box--container p {
+    font-size: 1.1rem;
+    line-height: 4rem;
   }
 }
 
@@ -650,6 +716,20 @@ body {
   /*NAVIGATION DESKTOP*/
   .nav-desktop__title {
     font-size: 11rem;
+  }
+  /*MAIN*/
+  .main {
+    /*SIDEBAR*/
+  }
+  .main .sidebar {
+    /*CONTACT*/
+  }
+  .main .sidebar .contact__box--container a {
+    font-size: 5rem;
+  }
+  .main .sidebar .contact__box--container p {
+    font-size: 1.5rem;
+    line-height: 5rem;
   }
   /*FOOTER*/
   .footer__box--left a {

@@ -38,6 +38,18 @@
                     }
                 }
             }
+
+            /*CONTACT*/
+            .contact {
+                &__box {
+                    &--container {
+                        p {
+                            font-size: 1.5rem;
+                        }
+
+                    }
+                }
+            }
         }
     }
 }

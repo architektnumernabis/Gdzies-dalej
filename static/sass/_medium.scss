@@ -38,6 +38,26 @@
                 font-size: 1.4rem;
             }
         }
+
+        /*SIDEBAR*/
+        .sidebar {
+
+            /*CONTACT*/
+            .contact {
+                &__box {
+                    &--container {
+                        a {
+                            font-size: 5rem;
+                        }
+
+                        p {
+                            font-size: 1.6rem;
+                            line-height: 5rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     /*FOOTER*/
@@ -159,6 +179,22 @@
                 &__box {
                     a {
                         font-size: 2.5rem;
+                    }
+                }
+            }
+
+            /*CONTACT*/
+            .contact {
+                &__box {
+                    &--container {
+                        a {
+                            font-size: 4rem;
+                        }
+
+                        p {
+                            font-size: 1.1rem;
+                            line-height: 4rem;
+                        }
                     }
                 }
             }

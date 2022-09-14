@@ -8,6 +8,7 @@ const header = document.querySelector('.header')
 const handleNav = () => {
     navBtn.classList.toggle('is-active')
     navMobile.classList.toggle('nav-mobile__links--active')
+    document.body.classList.toggle('body-no-scroll')
 }
 
 navBtn.addEventListener('click', handleNav)
