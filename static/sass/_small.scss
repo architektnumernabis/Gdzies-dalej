@@ -12,6 +12,12 @@
     /*MAIN*/
     .main {
 
+        .heading {
+            &__title {
+                font-size: 5rem;
+            }
+        }
+
         /*BLOG-POST*/
         .blog-post {
             &__title {

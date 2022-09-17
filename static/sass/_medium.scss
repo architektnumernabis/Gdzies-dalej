@@ -12,6 +12,12 @@
     /*MAIN*/
     .main {
 
+        .heading {
+            &__title {
+                font-size: 6rem;
+            }
+        }
+
         /*BLOG-POST*/
         .blog-post {
             &__title {
@@ -164,6 +170,12 @@
     .main {
         margin: 3em auto;
         grid-template-columns: repeat(3, 1fr);
+
+        .heading {
+            &__title {
+                font-size: 7rem;
+            }
+        }
 
         /*BLOG-POSTS*/
         .blog-posts {

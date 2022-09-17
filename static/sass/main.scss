@@ -26,6 +26,13 @@ body {
     overflow-y: hidden;
 }
 
+.underline {
+    margin: 0 auto 0;
+    width: 60px;
+    height: 4px;
+    background-color: $grey-color;
+}
+
 /*NAVIGATION DESKTOP*/
 .nav-desktop {
     display: none;
@@ -120,6 +127,7 @@ body {
 /*HEADER ALL POSTS*/
 .header-allposts {
     background-image: url('../img/header/header-allposts.jpeg');
+    margin-bottom: 3em;
 }
 
 /*MAIN*/
@@ -133,6 +141,14 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .heading {
+        &__title {
+            text-align: center;
+            font-size: 4rem;
+            font-family: 'Aboreto', cursive;
+        }
     }
 
     /*BLOG POST*/
