@@ -116,6 +116,7 @@
         a {
             text-decoration: none;
             color: $black-color;
+
         }
 
         &__title {
@@ -137,12 +138,26 @@
                 @include navHoverAnimation;
                 padding: 5px;
             }
+
+            .current-site {
+                color: $white-color;
+                background: $black-color;
+            }
         }
     }
 
     /*HEADER*/
     .header {
-        background-image: url('../img/header/header-big.jpeg');
+
+        &__img {
+            background-image: url('../img/header/header-big.jpeg');
+        }
+
+    }
+
+    /*HEADER ALL POSTS*/
+    .header-allposts {
+        background-image: url('../img/header/header-allposts-big.jpeg');
     }
 
     /*MAIN*/
@@ -198,6 +213,17 @@
                     }
                 }
             }
+        }
+    }
+
+    /*MAIN ALL POSTS*/
+    .main-allposts {
+        grid-template-columns: repeat(1, 1fr);
+
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2em;
         }
     }
 }

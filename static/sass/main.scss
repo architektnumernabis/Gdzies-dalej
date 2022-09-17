@@ -57,7 +57,6 @@ body {
     }
 
     &__links {
-        //display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -92,11 +91,35 @@ body {
 
 /*HEADER*/
 .header {
-    background-image: url('../img/header/header-mini.jpeg');
-    height: 50vh;
-    background-position: center;
-    background-size: cover;
-    mask-type: 77px;
+
+    &__img {
+        position: relative;
+        height: 50vh;
+        background-image: url('../img/header/header-mini.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: -2;
+    }
+
+    &__allposts {
+        background-image: url('../img/header/header-allposts.jpeg');
+    }
+
+    &__shadow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .3);
+        z-index: -1;
+    }
+}
+
+/*HEADER ALL POSTS*/
+.header-allposts {
+    background-image: url('../img/header/header-allposts.jpeg');
 }
 
 /*MAIN*/
@@ -146,6 +169,7 @@ body {
             font-family: 'Aboreto', cursive;
             font-size: 2.3rem;
             margin-top: 0.3em;
+            text-align: center;
         }
 
         &__date {
@@ -250,30 +274,30 @@ body {
             }
 
             &__box {
-               display: flex;
-               flex-direction: column;
-               align-items: flex-start; 
-
-               &--container {
                 display: flex;
+                flex-direction: column;
+                align-items: flex-start;
 
-                a {
-                    color: $black-color;
-                    font-size: 4rem;
-                    transition: transform .3s;
+                &--container {
+                    display: flex;
 
-                    &:hover {
-                        transform: scale(1.1);
+                    a {
+                        color: $black-color;
+                        font-size: 4rem;
+                        transition: transform .3s;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
                     }
-                }
 
-                p {
-                    font-size: 1.2rem;
-                    line-height: 4rem;
-                    margin-left: 20px;
-                }
+                    p {
+                        font-size: 1.2rem;
+                        line-height: 4rem;
+                        margin-left: 20px;
+                    }
 
-               }
+                }
             }
         }
     }
@@ -289,11 +313,6 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-        }
-
-        &--two {
-            background-color: $black-color;
-            //popracować nad kolorystyką
         }
 
         &--left,
