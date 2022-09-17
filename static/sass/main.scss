@@ -130,6 +130,13 @@ body {
     margin-bottom: 3em;
 }
 
+
+/*HEADER ABOUT US*/
+.header-aboutus {
+    background-image: url('../img/header/aboutus_small.jpeg');
+    margin-bottom: 3em;
+}
+
 /*MAIN*/
 .main {
     margin: 2em auto;
@@ -315,6 +322,26 @@ body {
 
                 }
             }
+        }
+    }
+}
+
+/*MAIN ABOUT US */
+.main-aboutus {
+    .aboutus {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 2em;
+
+        &__title {
+            text-align: center;
+            font-size: 2.3rem;
+            text-transform: uppercase;
+        }
+
+        &__text {
+            font-size: 1.2rem;
         }
     }
 }

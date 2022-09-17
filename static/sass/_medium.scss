@@ -66,6 +66,15 @@
         }
     }
 
+    /*MAIN ABOUT US*/
+    .main-aboutus {
+        .aboutus {
+            &__title {
+                font-size: 2.9rem;
+            }
+        }
+    }
+
     /*FOOTER*/
     .footer {
         &__box {
@@ -166,6 +175,12 @@
         background-image: url('../img/header/header-allposts-big.jpeg');
     }
 
+    /*HEADER ABOUT US*/
+    .header-aboutus {
+        background-image: url('../img/header/aboutus_big.jpeg');
+        margin-bottom: 3em;
+    }
+
     /*MAIN*/
     .main {
         margin: 3em auto;
@@ -238,6 +253,42 @@
             gap: 2em;
         }
     }
+
+    /*MAIN ABOUT US */
+    .main-aboutus {
+        grid-template-columns: repeat(1, 1fr);
+
+        .aboutus {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row: repeat(2, 1fr);
+            gap: 3em;
+            padding: 2em;
+
+            &__title {
+                font-size: 3.2rem;
+            }
+
+            &__img {
+                &--left {
+                    grid-column: 2/3;
+                }
+            }
+
+            &__info {
+                display: flex;
+                align-items: center;
+
+                &--left {
+                    grid-row: 2/3;
+                }
+            }
+
+            &__text {
+                font-size: 1.2rem;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -255,6 +306,19 @@
                         font-size: 3.5rem;
                     }
                 }
+            }
+        }
+    }
+
+    /*MAIN ABOUT US*/
+    .main-aboutus {
+        .aboutus {
+            &__title {
+                font-size: 3.5rem;
+            }
+
+            &__text {
+                font-size: 1.5rem;
             }
         }
     }
