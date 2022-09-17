@@ -57,6 +57,11 @@ body {
         font-size: 2rem;
         padding: 2px;
         z-index: 1000;
+
+        a {
+            text-decoration: none;
+            color: $black-color
+        }
     }
 
     &__button {

@@ -102,6 +102,11 @@ body {
   z-index: 1000;
 }
 
+.nav-mobile__title a {
+  text-decoration: none;
+  color: black;
+}
+
 .nav-mobile__button {
   z-index: 1000;
 }
@@ -693,6 +698,10 @@ body {
     font-family: 'Qwitcher Grypen', cursive;
     font-size: 9rem;
     padding: 20px 0;
+  }
+  .nav-desktop__title a {
+    text-decoration: none;
+    color: black;
   }
   .nav-desktop__links {
     font-size: 1.5rem;
